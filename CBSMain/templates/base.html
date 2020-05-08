@@ -15,36 +15,37 @@
 <header>
 <header>{% block header %}{% endblock %}</header>	    	
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">救急センター</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarText">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">ホーム <span class="sr-only">(電流)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">特徴</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">助けて</a>
-      </li>
-    </ul>
-    <span class="navbar-text">
-      | Sign out
-    </span>
-  </div>
-</nav>
-
 <body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <a class="navbar-brand" href="#">救急センター</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarText">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">ホーム <span class="sr-only">(電流)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">特徴</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">助けて</a>
+	      </li>
+	    </ul>
+	    <span class="navbar-text">
+	      | Sign out
+	    </span>
+	  </div>
+	</nav>
+	<div class="subnav">
+		<span style="color: #20639b;">|</span>
+	</div>
 	<div class="container-fluid">
 		<section class="content">
-		  
-		  {% for message in get_flashed_messages() %}
+		  <!--{% for message in get_flashed_messages() %}
 		    <div class="flash">{{ message }}</div>
-		  {% endfor %}
+		  {% endfor %}-->
 		  {% block content %}{% endblock %}
 		</section>  
 	</div>

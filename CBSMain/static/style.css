@@ -16,6 +16,10 @@ body {
 .left_menu{
     border: 10px solid white;
 }
+.subnav {
+    background-color: #20639b;    
+}
+
 .form {
     background-color: #dddddd;
     height:230px;
@@ -29,8 +33,8 @@ body {
   height: auto;
 }
 #left_panel {
-  background-color: #27496d;
-  color:#fff;
+  background-color: #dddddd;
+  color:#000;
 }
 .left_panel_info {
     margin-top: 5px;
